@@ -13,7 +13,7 @@ from NARC import *
 ROM_NAME = "rom.nds"  # The name of your rom
 SOURCE_ROM = "test.nds"
 OFFSET_TO_PUT = 0x800000
-SEARCH_FREE_SPACE = False  # Set to True if you want the script to search for free space
+## SEARCH_FREE_SPACE = False  # Set to True if you want the script to search for free space
                            # Set to False if you don't want to search for free space as you for example update the engine
 
 #############
