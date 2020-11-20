@@ -4,7 +4,9 @@ Showing IV/EV in Summary screen, when press **L Button** change to EVs, press **
 support English ROM
 
 ## Screenshots
-![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__24239.png)![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__24255.png)![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__24271.png)
+![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/English-version/Screenshots/test__24239.png)
+![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/English-version/Screenshots/test__24255.png)
+![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/English-version/Screenshots/test__24271.png)
 
 # Install
  1.Download and install Devkitpro. 
