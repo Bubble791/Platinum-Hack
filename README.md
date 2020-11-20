@@ -1,5 +1,4 @@
 ## Platinum-Hack
-Showing IV/EV in Summary screen, when press **L Button** change to EVs, press **R Button** change to IVs and press  **SELECT Button** change to now stats.
 
 信息界面按**L键**显示努力值，**R键**显示个体值，**select键**恢复正常属性值
 
@@ -7,19 +6,6 @@ support Japanese ROM
 
 ## Screenshots
 ![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__14435.png)![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__14406.png)![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__14455.png)
-
-# Install
- 1.Download and install Devkitpro. 
- 
- 2.Download the latest version of Python 3.7.
- 
- 3.Get your ROM, rename it to **rom.nds** and place it the main folder.
- 
- 4.Run cmd.exe from the main folder.
- 
- 5.Type `python scripts//make.py` on the command prompt window.
- 
- 6.And if build success, the new nds rom named as **test.nds**
  
  # 使用步骤 
  1.下载并安装Devkitpro. 
@@ -27,6 +13,8 @@ support Japanese ROM
  2.下载安装Python 3.7, 版本不要超过3.7.6
  
  3.下载源码并解压
+ 
+ 4.创建一个名为**unzip**的文件夹
  
  4.把rom改名为 **rom.nds** 放到主目录文件夹里
  
