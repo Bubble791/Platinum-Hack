@@ -34,4 +34,4 @@ support Japanese ROM
 
 [CFRU]: https://github.com/Skeli789/Complete-Fire-Red-Upgrade
 [G5T]: https://github.com/CodenamePU/Gen5Tools
-[ARM9]: pokehacking.com/r/20041000
+[ARM9]: https://pokehacking.com/tutorials/ramexpansion/
