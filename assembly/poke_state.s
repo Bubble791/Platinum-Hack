@@ -61,9 +61,9 @@ pop {r4-r6,pc}
 
 
 return:
-ldr r1, =0x0208C1B8 + 1
+ldr r1, =0x0208CA34 + 1
 bx r1
 
 PageChange:
-ldr r2, =0x0208D01C + 1
+ldr r2, =0x0208D898 + 1
 bx r2
