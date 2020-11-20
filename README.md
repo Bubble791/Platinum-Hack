@@ -1,4 +1,8 @@
 ## Platinum-Hack
+Showing IV/EV in Summary screen, when press **L Button** change to EVs, press **R Button** change to IVs and press  **SELECT Button** change to now stats.
+
+信息界面按**L键**显示努力值，**R键**显示个体值，**select键**恢复正常属性值
+
 support Japanese ROM
 
 ## Screenshots
