@@ -1,6 +1,9 @@
 ## Platinum-Hack
 support Japanese ROM
 
+## Screenshots
+![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__14435.png)![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__14406.png)![Screenshots1](https://github.com/Bubble791/Platinum-Hack/blob/main/Screenshots/test__14455.png)
+
 # Install
  1.Download and install Devkitpro. 
  
