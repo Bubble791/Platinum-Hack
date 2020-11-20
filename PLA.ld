@@ -13,5 +13,5 @@ PokeReplace = 0x02076DA0| 1;
 FillWindowPixelBuffer = 0x0201AA4C| 1;
 ConvertNumToString = 0x0208F8FC| 1;
 StringPut = 0x0208F850| 1;
-PutWindows = 0x0201A5FC| 1;
+PutWindows = 0x0201A64C| 1;
 FreeSystem = 0x02017EE0| 1;
