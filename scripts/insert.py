@@ -10,7 +10,7 @@ import _io
 OFFSET_TO_PUT = 0
 SOURCE_ROM = "rom.nds"
 ROM_NAME = "test.nds"
-OFFSET_START = 0x02FC8000
+OFFSET_START = 0x2fc8000
 
 if sys.platform.startswith('win'):
     PathVar = os.environ.get('Path')
@@ -58,7 +58,6 @@ def ExtractPointer(byteList: [bytes]):
         pointer += (int(byteList[a])) << (8 * a)
 
     return pointer
-
 
 def GetTextSection() -> int:
     try:
@@ -114,7 +113,7 @@ def Hook(rom: _io.BufferedReader, space: int, hookAt: int, register=0):
     else:
         data = bytes([0x00, 0x48 | register, 0x00 | (register << 3), 0x47])
 
-    space += OFFSET_START + 1
+    space +=  0x02FC8001
     data += (space.to_bytes(4, 'little'))
     rom.write(bytes(data))
 
@@ -283,12 +282,13 @@ def main():
         print("Inserting code.")
         table = GetSymbols(GetTextSection())
         with open(OUTPUT, 'rb') as binary:
+            rom.seek(OFFSET_START - 0x02FC8000)
             rom.write(binary.read())
             binary.close()
 
         # Adjust symbol table
         for entry in table:
-            table[entry] += OFFSET_TO_PUT
+            table[entry] += OFFSET_START - 0x02FC8000
 
         # Insert byte changes
         if os.path.isfile(BYTE_REPLACEMENT):

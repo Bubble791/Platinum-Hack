@@ -12,6 +12,7 @@ from NARC import *
 
 ROM_NAME = "rom.nds"  # The name of your rom
 SOURCE_ROM = "test.nds"
+OFFSET_START = 0x02FC8000
 ## SEARCH_FREE_SPACE = False  # Set to True if you want the script to search for free space
                            # Set to False if you don't want to search for free space as you for example update the engine
 
@@ -96,11 +97,6 @@ def BuildRom():
                                selfs+"/overlay","-t", selfs+"/banner.bin","-h", selfs+"/header.bin" ])
 
 
-def EditInsert(offset: int):
-    ChangeFileLine("./scripts/insert.py", 10, "OFFSET_TO_PUT = " + hex(offset) + '\n')
-    ChangeFileLine("./scripts/insert.py", 11, 'SOURCE_ROM = "' + ROM_NAME + '"\n')
-
-
 def BuildCode():
     if shutil.which('python3') is not None:
         result = os.system("python3 scripts/build.py")
@@ -110,6 +106,9 @@ def BuildCode():
     if result != 0:  # Build wasn't sucessful
         sys.exit(1)
 
+def EditInsert():
+    ChangeFileLine("linker.ld", 4, "        rom     : ORIGIN = "+ hex(0x08FC8000 + OFFSET_START - 0x02fc8000) + ", LENGTH = 512k" + '\n')
+    ChangeFileLine("./scripts/insert.py", 13, "OFFSET_START = " + hex(OFFSET_START) + '\n')
 
 def InsertCode():
     if shutil.which('python3') is not None:
@@ -129,6 +128,7 @@ def ClearFromTo(rom, from_: int, to_: int):
 
 
 def main():
+    EditInsert()
     ExterNdsRom()
     BuildCode()
     InsertCode()
