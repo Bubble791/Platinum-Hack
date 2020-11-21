@@ -17,7 +17,7 @@ support English ROM
  
  4.Creat a new folder named **unzip**
  
- 5.Change `scripts/make.py` line 15 `OFFSET_START` to your free offset + 0x02FC8000.
+ 5.Change `scripts/make.py` line 15 `OFFSET_START` to your free offset + 0x02FC8000(if you never use ARM9 Expansion, put 0x02FC8000).
  
  6.Run cmd.exe from the main folder.
  
