@@ -1,0 +1,9 @@
+*.ini
+*.nds
+build/*
+unzip/*
+generatedrepoints
+*__pycache__
+*.idea
+# pycache files
+*.pyc
