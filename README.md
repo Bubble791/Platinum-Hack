@@ -17,11 +17,13 @@ support English ROM
  
  4.Creat a new folder named **unzip**
  
- 5.Run cmd.exe from the main folder.
+ 5.Change `scripts/insert.py` line 13 `OFFSET_START` to your free offset.
  
- 6.Type `python scripts//make.py` on the command prompt window.
+ 6.Run cmd.exe from the main folder.
  
- 7.And if build success, the new nds rom named as **test.nds**
+ 7.Type `python scripts//make.py` on the command prompt window.
+ 
+ 8.And if build success, the new nds rom named as **test.nds**
 
 
 # Credits

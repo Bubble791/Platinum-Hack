@@ -5,5 +5,4 @@ unzip/*
 generatedrepoints
 *__pycache__
 *.idea
-# pycache files
 *.pyc

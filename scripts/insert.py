@@ -49,7 +49,7 @@ EVENT_SCRIPTS = "eventscripts"
 SONGS = "songs"
 SPECIAL_INSERTS = 'special_inserts.asm'
 SPECIAL_INSERTS_OUT = 'build/special_inserts.bin'
-OFFECTSFILES = "unzip/root/data/Fill/9.nclr"
+
 
 
 def ExtractPointer(byteList: [bytes]):
@@ -275,7 +275,10 @@ def TryProcessConditionalCompilation(line: str, definesDict: dict, conditionals:
 
 def main():
     startTime = datetime.now()
-
+    if os.path.exists("unzip/root/data/Fill/9.bin"):
+        OFFECTSFILES = "unzip/root/data/Fill/9.bin"
+    else:
+        OFFECTSFILES = "unzip/root/data/Fill/9.nclr"
     with open(OFFECTSFILES, 'rb+') as rom:
         print("Inserting code.")
         table = GetSymbols(GetTextSection())
